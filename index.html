@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 1 more rise
+
+    </title>
+    <link rel="stylesheet" href="css/utils.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/blog.css">
+</head>
+
+<body>
+    <header>
+        <nav class="nav sticky" id="navbar">
+
+
+
+            <div class="mlogo" onclick="toggleMenu()">
+                <hr class="line">
+                <hr class="line">
+                <hr class="line">
+
+            </div>
+
+            <a href="index.html"> <img src="../img/logo.png" alt="1 more rise" class="logo"></a>
+
+            <ul class="menu">
+                <li> <a href="index.html">Home</a></li>
+                <li> <a href="blog.html"> Blog</a></li>
+                <li> <a href="about.html">About</a></li>
+                <li> <a href="contact.html">Contact</a></li>
+
+            </ul>
+        </nav>
+
+    </header>
+    <aside class="aside sidebar" id="menu-box">
+        <div class="dmenu">
+            <div class="mlogo" onclick="toggleMenu()">
+                <hr class="line">
+                <hr class="line">
+                <hr class="line">
+
+            </div>
+            <!-- <a href="index.html"> <img src="../img/logo.png" alt="1 more rise" class="logo"></a> -->
+
+            <ul class="v-menu">
+                <li> <a href="index.html">Home</a></li>
+                <hr>
+                <li> <a href="blog.html"> Blog</a></li>
+                <hr>
+                <li> <a href="about.html">About</a></li>
+                <hr>
+                <li> <a href="contact.html">Contact</a></li>
+                <hr>
+
+            </ul>
+        </div>
+    </aside>
+    <main class="containers">
+
+        <img src="../img/be.png" alt="">
+        <div class="t">
+            <div class="intro"> Become Financially Literate
+            </div>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id laborum corrupti reprehenderit totam sint
+                magnam placeat debitis natus ea! Optio amet sequi nisi nesciunt, quas error fugiat aliquid quia facilis.
+                Ipsa quas incidunt vero soluta consequatur eaque non. Voluptates quibusdam, laboriosam modi cumque
+                itaque inventore velit numquam ipsum sit fugit obcaecati eos nisi, officia atque temporibus!
+            </p>
+            <div class="btn">
+                <input type="text" placeholder="Your Name" class="input">
+                <input type="email" placeholder="Your Email" name="email" id="" class="input">
+                <input type="submit" value="Join with us..." id="btn">
+            </div>
+        </div>
+    </main>
+
+    <div class="blog">
+        <h1>Blogs</h1>
+        <hr>
+        <div class="detail">
+            <h2>My first Blog</h2>
+            <div class="detail-blog flex">
+                <div class="item box items">
+                    <img src="./img/fin-lit.jpg" alt="">
+                    <p><a href="financial-literacy.html"> Why financial literacy is important?</a></p>
+                </div>
+                <div class="item box items">
+                    <img src="./img/invest.jpg" alt="">
+                    <p><a href="w-invest.html"> Why should you invest?</a></p>
+                </div>
+                <div class="item box items"><img src="./img/mfund.jpg" alt="">
+                    <p><a href="mfund.html"> Introduction to Mutual Fund's</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <footer class="footer flex bsticky">
+        Copyright © 2022 Another Rise
+    </footer>
+
+    <!-- javascript -->
+    <script>
+
+        function toggleMenu() {
+            var menuBox = document.getElementById('menu-box');
+            if (menuBox.style.display == "block") { // if is menuBox displayed, hide it
+                menuBox.style.display = "none";
+            }
+            else { // if is menuBox hidden, display it
+                menuBox.style.display = "block";
+            }
+        }
+    </script>
+</body>
+
+</html>
